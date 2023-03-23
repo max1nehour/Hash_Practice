@@ -18,17 +18,15 @@ with open('/content/hw2_data.txt', 'r') as data:
 string_counts = {}
 ```
 
-* 一行一行讀取
-* 分割每一行變成單個文字
-* 一個單字一個單字讀取
+* 一行一行讀取，分割每一行變成單個文字
 * stripe(): 去除首尾空格
 * split(): 括號內為空格，代表以「一個空格」為分隔符
 ```py
     for line in data:
         words = line.strip().split()
 ```
-
-* 如果字串不存在，將其加入字典中，令值=1
+* 一個單字一個單字讀取
+* 如果單字不存在，將其加入字典中，令值=1
 * 逐行列印單字和其出現次數，方便debug
 ```py
         for string in words:
@@ -37,7 +35,7 @@ string_counts = {}
                 print(words, string_counts[string])  
 ```
 
-* 如果字串已存在，將其在字典中的值加1
+* 如果單字已存在，將其在字典中的值加1
 * 列印單字和其出現次數
 ```py    
             else:
