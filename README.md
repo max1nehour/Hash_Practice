@@ -15,7 +15,7 @@
 ```py
 with open('/content/hw2_data.txt', 'r') as data:
 string_counts = {}
-```py
+```
 
 * 一行一行讀取
 * 分割每一行變成單個文字
@@ -23,7 +23,7 @@ string_counts = {}
 ```py
     for line in data:
         words = line.strip().split()
-```py
+```
 
 * 如果字串不存在，將其加入字典中，令值=1
 * 逐行列印單字和其出現次數，方便debug
@@ -32,7 +32,7 @@ string_counts = {}
             if string not in string_counts:  
                 string_counts[string] = 1
                 print(words, string_counts[string])  
-```py
+```
 
 * 如果字串已存在，將其在字典中的值加1
 * 列印單字和其出現次數
@@ -42,7 +42,7 @@ string_counts = {}
                 string_counts[string] += 1
                 print(words, string_counts[string]) 
                 
-```py
+```
 
 * 列印有多少字典的key和其對應value 
 * 列印有多少元素在字典中
@@ -51,12 +51,12 @@ string_counts = {}
 print("每一個單字出現次數：",string_counts.items())
 print("有幾種不同的單字：",len(string_counts))
 
-```py
+```
 
 * 記得關閉檔案
 
 ```py
 data.close()
   
-```py
+```
 
