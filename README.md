@@ -36,18 +36,15 @@ string_counts = {}
 
 * 如果字串已存在，將其在字典中的值加1
 * 列印單字和其出現次數
-```py
-            
+```py    
             else:
                 string_counts[string] += 1
                 print(words, string_counts[string]) 
-                
 ```
 
 * 列印有多少字典的key和其對應value 
 * 列印有多少元素在字典中
-```py
-             
+```py        
 print("每一個單字出現次數：",string_counts.items())
 print("有幾種不同的單字：",len(string_counts))
 
@@ -57,6 +54,5 @@ print("有幾種不同的單字：",len(string_counts))
 
 ```py
 data.close()
-  
 ```
 
