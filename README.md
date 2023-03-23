@@ -9,10 +9,11 @@
 
  * 用while迴圈確保輸入的數字在0~255之間。
 
-
+* 載入json模組
 * 讀取txt檔
 * 初始化一個空字典
 ```py
+import json
 with open('/content/hw2_data.txt', 'r') as data:
 string_counts = {}
 ```
@@ -42,11 +43,11 @@ string_counts = {}
                 print(words, string_counts[string]) 
 ```
 
-* 列印有多少字典的key和其對應value 
+* 列印有多少字典的key和其對應value，利用json模組增加可讀性
 * 列印有多少元素在字典中
-```py        
-print("每一個單字出現次數：",string_counts.items())
-print("有幾種不同的單字：",len(string_counts))
+```py                     
+print("每一個單字出現次數：",json.dumps(string_counts, sort_keys=False, indent=4),"\n")
+print("有幾種單字出現：",len(string_counts),"種")
 
 ```
 
