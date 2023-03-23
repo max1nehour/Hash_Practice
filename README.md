@@ -21,6 +21,8 @@ string_counts = {}
 * 一行一行讀取
 * 分割每一行變成單個文字
 * 一個單字一個單字讀取
+* stripe(): 去除首尾空格
+* split(): 括號內為空格，代表以「一個空格」為分隔符
 ```py
     for line in data:
         words = line.strip().split()
