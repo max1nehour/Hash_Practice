@@ -1,4 +1,4 @@
-#### HW2_hash_practice
+#### Hash_practice
 
 # 讀取txt檔 並運用hash計算有幾種不同的單字和其出現次數
 
